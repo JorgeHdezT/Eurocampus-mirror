@@ -18,6 +18,7 @@ header {
   padding: 20px;
   width: 100%;
   position: fixed;
+  transition: all .25s;
 
   img {
     width: 260px;
@@ -74,6 +75,12 @@ header {
   }
 }
 
+.scrolled {
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /*EFECTO DE HOVER Y MOSTRAR INFO ADICIONAL*/
 #formacion-dropdown:hover > .extra-info {
   display: flex;
@@ -115,5 +122,35 @@ header {
       text-align: justify;
       line-height: 30px;
     }
+  }
+}
+
+
+/*seccion de igualdad*/
+
+#igualdad {
+
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  margin: 50px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  aside img{
+    width: 400px;
   }
 }
