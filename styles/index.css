@@ -18,7 +18,7 @@ header {
   padding: 20px;
   width: 100%;
   position: fixed;
-  transition: all .25s;
+  transition: all 0.25s;
 
   img {
     width: 260px;
@@ -33,13 +33,13 @@ header {
       transition: all 0.25s;
     }
 
-    #formacion-dropdown, #nosotros-dropdown {
+    #formacion-dropdown,
+    #nosotros-dropdown {
       text-decoration: none;
       color: black;
       transition: all 0.25s;
       position: relative;
       padding-bottom: 20px; /* espacio que evita huecos */
-
     }
 
     a:hover {
@@ -125,12 +125,10 @@ header {
   }
 }
 
-
 /*seccion de igualdad*/
 
 #igualdad {
-
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,19 +136,114 @@ header {
   gap: 50px;
   margin: 50px;
 
-  h1 {
-    font-size: 36px;
+  article {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 40px;
     font-weight: 500;
   }
 
   p {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     line-height: 30px;
     margin-top: 20px;
   }
 
-  aside img{
-    width: 400px;
+  aside img {
+    width: 100%;
+  }
+}
+
+/*seccion de formacion*/
+
+#formacion {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+
+  #back-text {
+    position: absolute;
+    top: 1350px;
+    color: rgba(186, 186, 186, 0.203);
+    z-index: 1;
+    font-weight: 100;
+    letter-spacing: 30px;
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 46px;
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    span {
+      color: var(--main-red);
+    }
+  }
+
+  p {
+    margin-top: -20px;
+  }
+
+  #formacion-content {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    width: 70%;
+    img {
+      width: 50%;
+    }
+
+    #box-container {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+
+        h2 {
+          margin: 0;
+          color: var(--main-red);
+          font-weight: bold;
+        }
+
+        h3 {
+          font-size: 16px;
+          margin-bottom: 20px;
+          margin-top: 5px;
+        }
+        
+        p {
+          margin-top: 5px;
+        }
+      }
+    }
   }
 }
